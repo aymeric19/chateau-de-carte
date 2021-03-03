@@ -1,0 +1,553 @@
+@font-face{
+	font-family: 'Gloria_Hallelujah';
+	src: url(../fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+	font-family: 'Permanent_Marker';
+	src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+*{
+	box-sizing: border-box;
+}
+.def
+{
+	margin-right: 20%;
+	margin-left: 20%;
+	color: #fff;
+}
+.def h3
+{
+	font-family: 'Permanent_Marker';
+	color: #fff;
+}
+
+
+body{
+	justify-content: flex-start;
+	background: url(../img/original.jpg);
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	color: #1A1A33;
+	letter-spacing: 1px;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 5em;
+font-family: 'Permanent_Marker';
+	color: white;
+}
+
+h2{
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-size: 2em;
+  color:white;
+	margin-top: 0;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.big-container{
+	display: grid;
+
+}
+
+.container{
+	height: 110vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.inner-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: ;
+	width: 100%;
+
+}
+
+.container:first-child{
+
+
+	color: white;
+	flex-direction: column;
+}
+
+
+
+
+.already-subscribed p{
+	display: inline-block;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.already-subscribed button{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	background: #08D015;
+	border-radius: 5px;
+	transition: .3s;
+	margin-left: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.already-subscribed button:hover{
+	cursor: pointer;
+	background: #003403;
+}
+
+
+
+.form-group{
+	display: grid;
+	grid-template-columns: 0 100%;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+
+label{
+	display: block;
+	margin-left: 30px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color:red;
+}
+
+.required{
+	color: #fff;
+	font-weight: normal;
+}
+
+input{
+	font-family: 'Roboto', sans-serif;
+	color: #3A2E46;
+	font-size: 0.9em;
+	width: 480px;
+	min-width: 300px;
+	padding: 10px 15px;
+	margin-top: 5px;
+	background-color: #f9f9f9;
+	border: 1px solid #E9E9E9;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 5px rgba(2, 2, 0, 0.05), 0 0 5px rgba(255, 255, 255, 0.5), inset -1px -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+input::placeholder {
+	color: #BFBABA;
+	letter-spacing: 1px;
+}
+
+input:invalid{
+	border: 1px solid red;
+}
+
+.form-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+p.forgotten-password{
+	font-size: 0.85em;
+	display: inline-block;
+	margin: 0 8px;
+	color: #08D015;
+}
+
+div p.required-champs{
+	font-size: 0.85em;
+	display: inline-block;
+	margin: 0 8px;
+	color: #08D015;
+}
+
+p.forgotten-password:hover{
+	color: #003403;
+}
+
+button.subscribe{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	background: #08D015;
+	border-radius: 5px;
+	transition: .3s;
+	margin-left: 113px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+button.subscribe:hover{
+	cursor: pointer;
+	background: #003403;
+}
+
+h2{
+	color: #fff;
+	font-family: 'Permanent_Marker';
+}
+
+.alert{
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px;
+	margin: 30px 0;
+	background: rgba(255,255,255,0.95);
+	color: #E31342;
+}
+
+.alert ul{
+	margin: 0;
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.alert li{
+	margin: 7px;
+}
+
+.alert a{
+	color: white;
+	text-decoration: none;
+}
+
+.alert a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+
+
+.alert p{
+	margin: 0;
+}
+
+@media(max-width: 1080px){
+	.big-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.container{
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container:first-child{
+		padding: 100px 0;
+		padding-bottom: 0;
+		background-position: 50% 20%;
+	}
+
+	.container:first-child{
+		justify-content: space-between;
+	}
+
+	div.inner-container{
+		margin-bottom: 100px;
+	}
+
+	.container:last-child{
+		padding: 50px 25px;
+	}
+
+	div.alert{
+		margin: 0;
+		width: 100vw;
+	}
+
+	.already-subscribed p{
+		color: #fff;
+	}
+
+	.already-subscribed button{
+		color: #33333D;
+		background: #fff;
+
+	}
+
+	.already-subscribed button:hover{
+		background: #efefef;
+	}
+}
+
+@media(max-width: 520px){
+	input{
+		width: 90%;
+	}
+
+	.form-footer{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	button.subscribe{
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.login-form{
+		min-width: 300px;
+	}
+}
+
+/*landing.php*/
+
+
+
+
+
+.landing-inner-container h1{
+	color: white;
+	text-align: center;
+}
+
+.landing-inner-container h2{
+	color: white;
+}
+
+h2.landing-h2{
+	text-align: center;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.container-management{
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fav-creer{
+	margin-left: 7px;
+}
+
+div.alert-table{
+	text-align: center;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding: 20px;
+	background: #1EC73F;
+	color: white;
+	width: 40%;
+}
+
+div.alert-table-reinitialisation{
+	margin-top: 20%;
+}
+
+/*style général*/
+table{
+
+	border-spacing: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+table h3{
+	font-size: 1.6em;
+	font-family: 'Permanent_Marker';
+}
+
+.little-screen{
+	display: none;
+}
+
+table td, th{
+	padding: 10px 10px;
+	border-bottom: none;
+	text-align: center;
+}
+
+table th{
+	background-color: #7B0000;
+	color: white;
+	border: 1px solid #FF4747;
+}
+
+table tr:nth-child(2n){
+	background-color: rgba(255, 255, 255, 0.97);
+}
+
+table tr:nth-child(2n+1){
+	background-color: #fff;
+}
+
+table td:last-child{
+	text-align: center;
+}
+
+table span.result{
+	font-weight: bold;
+	text-align: center;
+}
+
+table th.stats{
+	background-color: ;
+	color: white;
+	border: none;
+}
+
+button.edit, button.delete{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: white;
+	border: none;
+	padding: 15px 15px;
+	border-radius: 5px;
+	transition: .3s;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+button.edit:hover, button.delete:hover{
+	cursor: pointer;
+}
+
+button.edit{
+	background: #08D015;
+}
+
+button.edit:hover{
+	background: #003403;
+}
+
+button.delete{
+	background: #E72323;
+}
+
+button.delete:hover{
+	background: #003403;
+}
+
+button.subscribe-create{
+	background: #1EC73F;
+}
+
+button.subscribe-create:hover{
+	background: #003403;
+}
+
+button.subscribe-create-absolute{
+	background: #8C969E;
+	margin-left: 0;
+}
+
+button.subscribe-create-absolute:hover{
+	background: #003403;
+}
+
+button.subscribe.subscribe-delete-absolute{
+	background: #228E2F;
+	color: #fff;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+button.subscribe.subscribe-delete-absolute:hover{
+	background: #003403;
+}
+
+p.connectez-vous{
+	color: white;
+
+}
+
+p.connectez-vous:hover{
+	text-decoration: underline;
+}
+
+@media(min-width: 1080px){
+	table td:last-child {
+	    text-align: right;
+	    padding-right: 20px;
+	}
+}
+
+@media(max-width: 1080px){
+	.center{
+		margin-top: -80px;
+		margin-bottom: 20px;
+	}
+
+	table tr:nth-child(6n+1){
+	}
+
+	div.alert-table-reinitialisation{
+		width: 100%;
+	}
+}
+
+@media(max-width: 850px){
+	table{
+		font-size: 0.7em;
+		width: 100vw;
+		margin: 0;
+	}
+}
+
+@media(max-width: 690px){
+	.big-screen{
+		display: none;
+	}
+
+	.little-screen{
+		display: block;
+	}
+
+	table th.stats{
+		border: none;
+	}
+
+	table td{
+		border: none;
+	}
+
+	table tr{
+		background-color: rgba(234, 249, 246, 0.97);
+	}
+
+	table tr:nth-child(6n-4){
+		background-color: #28292F;
+		color: white;
+	}
+
+	table tr:nth-child(6n+1){
+		background-color: #A0E1E7;
+		color: white;
+	}
+}
+
+@media(max-width: 450px){
+	.container-management{
+		width: 300px;
+	}
+}
